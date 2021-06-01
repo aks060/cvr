@@ -15,7 +15,7 @@ CVR
     1. Open Terminal and set it to `Keep above others`
     2. Assign your dist in main.py `district` and put pincode you want to book in `pincodes`
     3. Run `python3 otp.py -m <Your Mobile Number>`  Enter OTP  you will get auth token.
-    4. Run `python3 main.py -t <Auth Token you get>
+    4. Run `python3 main.py -b <Your Position in your cowin account (0, 1, 2, 3) > -t <Auth Token you get>
     5. IF VACCINE AVAILABLE in given PINCODES  it will open CAPTCHA in Firefox. Enter CAPTCHA.
     
     6. Done!!!!
