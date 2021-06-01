@@ -26,3 +26,10 @@ CVR
     2. Time diff b/w each request should be min 5 sec. Otherwise IP will block.
     3. If tried sending OTP within 2 min of previous otp. <YOU WILL NOT RECIEVE NEW ONE. USE THAT OLD ONE AGAIN. SMS charges Rs 0.5 ;)> 
     4. Don't share this to Govt. People. They will definitely <NOT> like it.
+    5. For Mac Please change Line 156 in main.py
+
+# Response Codes:
+    400 : Either is already booked or something else is wrong
+    401 : Unauthorised or Session Expired
+    409 : Center is Full, No slot left
+    500 : Not your issue. They will manage.
