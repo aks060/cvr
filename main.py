@@ -135,7 +135,7 @@ def getcaptcha():
     f.write(js['captcha'])
     f.close()
     os.popen('firefox cap.html')
-    #FOR MAN CHANGE IT TO  'open -a firefox cap.html'
+    #FOR MAC CHANGE IT TO  'open -a firefox cap.html'
 
 
 days=day
