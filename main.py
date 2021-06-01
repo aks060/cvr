@@ -16,7 +16,7 @@ pincodes=[
     249408
 ]
 s=requests.session()
-ben_id=1
+ben_id=0
 
 # token='eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX25hbWUiOiJmOTA4ZDZjMC00ZTc5LTRkYjMtODdhZi1jZmM5ZDE5N2QwMTIiLCJ1c2VyX2lkIjoiZjkwOGQ2YzAtNGU3OS00ZGIzLTg3YWYtY2ZjOWQxOTdkMDEyIiwidXNlcl90eXBlIjoiQkVORUZJQ0lBUlkiLCJtb2JpbGVfbnVtYmVyIjo5ODc3Njk3OTM3LCJiZW5lZmljaWFyeV9yZWZlcmVuY2VfaWQiOjc0Nzc0NDkyODk3NDcwLCJzZWNyZXRfa2V5IjoiYjVjYWIxNjctNzk3Ny00ZGYxLTgwMjctYTYzYWExNDRmMDRlIiwidWEiOiJNb3ppbGxhLzUuMCAoWDExOyBVYnVudHU7IExpbnV4IHg4Nl82NDsgcnY6ODguMCkgR2Vja28vMjAxMDAxMDEgRmlyZWZveC84OC4wIiwiZGF0ZV9tb2RpZmllZCI6IjIwMjEtMDUtMjBUMTM6NDA6NDEuNDU5WiIsImlhdCI6MTYyMTUxODA0MSwiZXhwIjoxNjIxNTE4OTQxfQ.AHGQjwUfGcfzKdGsTRdR3FEQD04DVR0cSYkBdW5MbWU'
 #token='eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX25hbWUiOiIwOTQ4ZjgxNC0xZTk3LTQ1YjQtOGE0Yi00ZjFmZTdkMWJhYjciLCJ1c2VyX2lkIjoiMDk0OGY4MTQtMWU5Ny00NWI0LThhNGItNGYxZmU3ZDFiYWI3IiwidXNlcl90eXBlIjoiQkVORUZJQ0lBUlkiLCJtb2JpbGVfbnVtYmVyIjo4NjMwNTEzMzA4LCJiZW5lZmljaWFyeV9yZWZlcmVuY2VfaWQiOjkwMjc2MzYzMjY4MjIwLCJzZWNyZXRfa2V5IjoiYjVjYWIxNjctNzk3Ny00ZGYxLTgwMjctYTYzYWExNDRmMDRlIiwidWEiOiJNb3ppbGxhLzUuMCAoWDExOyBVYnVudHU7IExpbnV4IHg4Nl82NDsgcnY6ODguMCkgR2Vja28vMjAxMDAxMDEgRmlyZWZveC84OC4wIiwiZGF0ZV9tb2RpZmllZCI6IjIwMjEtMDUtMjBUMDk6MDM6MzUuMzY4WiIsImlhdCI6MTYyMTUwMTQxNSwiZXhwIjoxNjIxNTAyMzE1fQ.zwLT9jylJ2JtWsW6FcBg-PTK2xitOt3koctW5d6Zrow'
@@ -134,7 +134,8 @@ def getcaptcha():
     f=open('cap.html', 'w')
     f.write(js['captcha'])
     f.close()
-    os.system('firefox cap.html')
+    os.popen('firefox cap.html')
+    #FOR MAN CHANGE IT TO  'open -a firefox cap.html'
 
 
 days=day
