@@ -11,6 +11,7 @@ CVR
     
     
 # Steps
+        VOLUME FULL
     1. Open Terminal and set it to `Keep above others`
     2. Assign your dist in main.py `district` and put pincode you want to ok in `pincodes`
     3. Run `python3 otp.py -m <Your Mobile Number>`  Enter OTP  you will get auth token.
