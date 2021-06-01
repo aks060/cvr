@@ -1,2 +1,2 @@
-# vaccine-registration
-Cowin Vaccine Registration
+# cvr
+CVR
